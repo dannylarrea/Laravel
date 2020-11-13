@@ -1,4 +1,4 @@
-### Instalación laravel macOS
+### Instalación Laravel macOS
 1. https://laravel.com/docs/8.x#installing-laravel ==> Instalar composer: https://getcomposer.org/download/
   ```
   php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
