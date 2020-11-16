@@ -46,17 +46,19 @@ php artisan make:model BookAuthor -mcr
 ```
 
 Creamos la base de datos en phpMyAdmin (nombre igual al directorio del proyecto, p. ex.: bookstore)
+
 Añadimos la base de datos a la conexión. Editar el fichero: vendor/.env
+
 ```
-  Añadimos la base de datos a la conexión. Editar el fichero: vendor/.env
-  DB_CONNECTION=mysql
-  DB_HOST=127.0.0.1
-  DB_PORT=3306 /* igual al del servicio MySQL del XAMPP */
-  DB_DATABASE=data_base
-  DB_USERNAME=root
-  DB_PASSWORD=
-...
+// Añadimos la base de datos a la conexión. Editar el fichero: vendor/.env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306 /* igual al del servicio MySQL del XAMPP */
+DB_DATABASE=data_base
+DB_USERNAME=root
+DB_PASSWORD=
 ```
+
 INFO Migraciones (creación base de datos)
 
 https://laravel.com/docs/8.x/migrations
@@ -66,7 +68,8 @@ INFO Seeders
 https://laravel.com/docs/8.x/seeding
 
 INFO Crear vista (ruta->controller->view)
-https://laravel.com/docs/8.x/controllers
+- https://laravel.com/docs/8.x/controllers
+
 php artisan make:controller webstoreController
 
 INFO Añadir ficheros: imágenes, .css, etc.
@@ -97,7 +100,7 @@ chmod -R 777 storage/
 ### Error 5. Access denied for user root@localhost | PHP | Laravel (Connection refused)
 Crear un usuario específico para la base de datos que se está usando (p. ex.: danny %) y en el fichero .env asignar el host de la base de datos correctamente (en mi caso DB_HOST=192.168.64.2)
 
-###Error 6. Añadir rutas en el fichero: app/Http/Middleware/VerifyCsrfToken.php 
+### Error 6. Añadir rutas en el fichero: app/Http/Middleware/VerifyCsrfToken.php 
 
 https://www.positronx.io/laravel-ajax-example-tutorial/
 
