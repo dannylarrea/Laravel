@@ -41,21 +41,20 @@ php artisan make:model BookAuthor -mcr
 Creamos la base de datos en phpMyAdmin (nombre igual al directorio del proyecto, p. ex.: bookstore)
 Añadimos la base de datos a la conexión. Editar el fichero: vendor/.env
 ```
-Añadimos la base de datos a la conexión. Editar el fichero: vendor/.env
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306 /* igual al del servicio MySQL del XAMPP */
-DB_DATABASE=data_base
-DB_USERNAME=root
-DB_PASSWORD=
+  Añadimos la base de datos a la conexión. Editar el fichero: vendor/.env
+  DB_CONNECTION=mysql
+  DB_HOST=127.0.0.1
+  DB_PORT=3306 /* igual al del servicio MySQL del XAMPP */
+  DB_DATABASE=data_base
+  DB_USERNAME=root
+  DB_PASSWORD=
 ...
 ```
 INFO Migraciones (creación base de datos)
-````
+
 https://laravel.com/docs/8.x/migrations
 https://laravel.com/docs/8.x/migrations#running-migrations
 php artisan migrate
-```
 INFO Seeders
 https://laravel.com/docs/8.x/seeding
 
