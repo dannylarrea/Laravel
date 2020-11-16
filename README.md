@@ -17,12 +17,15 @@
   php artisan serve
   ```
 - - - -
-Comandos auxiliares
+## Comandos
 
-```php artisan --version```
+```
+php artisan --version
+// Crear un proyecto con Laravel
+composer create-project --prefer-dist laravel/laravel bookstore
 
-Crear un proyecto con Laravel
-```composer create-project --prefer-dist laravel/laravel bookstore```
+```
+
 
 Iniciar el vhost (dejarlo siempre en segundo plano)
 ```php artisan serve```
