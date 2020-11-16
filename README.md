@@ -18,6 +18,7 @@
   ```
 - - - -
 Comandos auxiliares
+
 ```php artisan --version```
 
 Crear un proyecto con Laravel
