@@ -64,9 +64,8 @@ Puntos a tener en cuenta:
 > ```
 
 **INFO Migraciones (creación base de datos)**
-
-https://laravel.com/docs/8.x/migrations
-https://laravel.com/docs/8.x/migrations#running-migrations
+* https://laravel.com/docs/8.x/migrations
+* https://laravel.com/docs/8.x/migrations#running-migrations
 
 **INFO Seeders**
 * https://laravel.com/docs/8.x/seeding
