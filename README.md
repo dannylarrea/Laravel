@@ -1,4 +1,4 @@
-# Instalación Laravel macOS
+# Instalación Laravel macOS (Laravel 8.x | 2020)
 1. Instalación composet
 > https://laravel.com/docs/8.x#installing-laravel ==> Instalar composer: https://getcomposer.org/download/
 >  ```
@@ -64,8 +64,9 @@ Puntos a tener en cuenta:
 > ```
 
 **INFO Migraciones (creación base de datos)**
-* https://laravel.com/docs/8.x/migrations
-* https://laravel.com/docs/8.x/migrations#running-migrations
+
+https://laravel.com/docs/8.x/migrations
+https://laravel.com/docs/8.x/migrations#running-migrations
 
 **INFO Seeders**
 * https://laravel.com/docs/8.x/seeding
@@ -88,32 +89,32 @@ Puntos a tener en cuenta:
 
 # Algunos errores en macOS
 **Error 1. Página por defecto de inicio no se visualiza (contiene error)**
-https://stackoverflow.com/questions/62801389/laravel-voyager-setup-error-file-put-contents
-in vendor\laravel\framework\src\Filesystem\Filesystem.php file change below line change `LOCK_EX` to `LOCK_SH`
+> https://stackoverflow.com/questions/62801389/laravel-voyager-setup-error-file-put-contents
+> in vendor\laravel\framework\src\Filesystem\Filesystem.php file change below line change `LOCK_EX` to `LOCK_SH`
 
 **Error 2. Migraciones no se ejecutan en VSC**
-```
-// En la aplicación de XAMPP clicamos GENERAL > Open Terminal y ejecutamos los siguientes comandos:
-root@debian:~# cd ..
-root@debian:/# cd opt/lampp/htdocs/www/Proyectos/bookstore/
-root@debian:/opt/lampp/htdocs/www/Proyectos/bookstore# php artisan migrate
-```
+> ```
+> // En la aplicación de XAMPP clicamos GENERAL > Open Terminal y ejecutamos los siguientes comandos:
+> root@debian:~# cd ..
+> root@debian:/# cd opt/lampp/htdocs/www/Proyectos/bookstore/
+> root@debian:/opt/lampp/htdocs/www/Proyectos/bookstore# php artisan migrate
+> ```
 
 **Error 3. Añadir en los controladores (en aquellos que realizan queries) la siguiente línea:**
-`use Illuminate\Support\Facades\DB;`
+> `use Illuminate\Support\Facades\DB;`
 
 **Error 4. The stream or file “/storage/logs/laravel.log” could not be opened: failed to open stream: Permission denied**
-```
-// Permisos (chmod ...) a los directorios:`
-chmod -R 775 resources/
-chmod -R 777 storage/
-```
+> ```
+> // Permisos (chmod ...) a los directorios:`
+> chmod -R 775 resources/
+> chmod -R 777 storage/
+> ```
 
 **Error 5. Access denied for user root@localhost | PHP | Laravel (Connection refused)**
-Crear un usuario específico para la base de datos que se está usando (p. ex.: `danny`) y en el fichero `.env` asignar el host de la base de datos correctamente (en mi caso `DB_HOST=192.168.64.2`)
+> Crear un usuario específico para la base de datos que se está usando (p. ex.: `danny`) y en el fichero `.env` asignar el host de la base de datos correctamente (en mi caso `DB_HOST=192.168.64.2`)
 
-**Error 6. Añadir rutas en el fichero: app/Http/Middleware/VerifyCsrfToken.php **
-* https://www.positronx.io/laravel-ajax-example-tutorial/
+**Error 6. Añadir rutas en el fichero: app/Http/Middleware/VerifyCsrfToken.php**
+> * https://www.positronx.io/laravel-ajax-example-tutorial/
 
 # Subir un proyecto local a GitHub
 ### desde la web de github
