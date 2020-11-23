@@ -85,6 +85,8 @@ https://laravel.com/docs/8.x/migrations#running-migrations
 <link rel="stylesheet" type="text/css" href="{{asset('css/styles.css')}}">
 ```
 **INFO CRUD**
+* https://laravel.com/docs/8.x/database
+* https://laravel.com/docs/8.x/queries#selects
 * https://richos.gitbooks.io/laravel-5/content/
 
 # Algunos errores en macOS
