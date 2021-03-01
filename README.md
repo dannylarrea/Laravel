@@ -139,8 +139,9 @@ git push -u origin master
 
 # Instalación Docker macOS (2021)
 Descargamos Docker desde https://www.docker.com/ get-started
+Laravel Sail is a light-weight command-line interface for interacting with Laravel's default Docker development environment. Sail provides a great starting point for building a Laravel application using PHP, MySQL, and Redis without requiring prior Docker experience. https://laravel.com/docs/8.x/sail
 
-**docker-compose.yml** file in laravel project
+**docker-compose.yml** file in Laravel project:
 ```
 # For more information: https://laravel.com/docs/sail
 version: '3'
