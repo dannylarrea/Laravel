@@ -242,4 +242,17 @@ Push a image to docker hub:
 Login Succeeded
 [MacBook-Air-de-Danny:~/Documents/Laravel/blog] danny% docker tag sail-8.0/app dannylarrea/blog:v1
 [MacBook-Air-de-Danny:~/Documents/Laravel/blog] danny% docker push dannylarrea/blog:v1
+
+// Otras ejecuciones
+docker tag sail-8.0/app dannylarrea/blog:sail-8.0
+docker push dannylarrea/blog:sail-8.0
+docker tag mysql:8.0 dannylarrea/blog:mysql
+docker push dannylarrea/blog:mysql
+docker tag phpmyadmin/phpmyadmin dannylarrea/blog:phpmyadmin/phpmyadmin
+docker tag phpmyadmin/phpmyadmin dannylarrea/blog:phpmyadmin
+docker push dannylarrea/blog:phpmyadmin
+docker tag redis:alpine dannylarrea/blog:redis
+docker push dannylarrea/blog:redis
+docker tag mailhog/mailhog dannylarrea/blog:mailhog
+docker push dannylarrea/blog:mailhog
 ```
