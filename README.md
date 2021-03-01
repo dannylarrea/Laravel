@@ -234,3 +234,4 @@ volumes:
     sailredis:
         driver: local
 ```
+Important: add in ```.env``` file: ```DB_HOST=blog_mysql_1```
