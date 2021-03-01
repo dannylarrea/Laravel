@@ -235,3 +235,11 @@ volumes:
         driver: local
 ```
 Important: add in ```.env``` file: ```DB_HOST=blog_mysql_1```
+
+Push a image to docker hub:
+```
+[MacBook-Air-de-Danny:~/Documents/Laravel/blog] danny% docker login  Authenticating with existing credentials...
+Login Succeeded
+[MacBook-Air-de-Danny:~/Documents/Laravel/blog] danny% docker tag sail-8.0/app dannylarrea/blog:v1
+[MacBook-Air-de-Danny:~/Documents/Laravel/blog] danny% docker push dannylarrea/blog:v1
+```
