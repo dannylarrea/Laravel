@@ -137,5 +137,5 @@ git push -u origin master
 
 ```
 
-# Instalación Laravel macOS (Laravel 8.x | 2020)
+# Instalación Docker macOS (2021)
 Descargamos Docker desde https://www.docker.com/ get-started
