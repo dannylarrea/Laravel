@@ -1,5 +1,5 @@
 # Instalación Laravel macOS (Laravel 8.x | 2020)
-1. Instalación composet
+1. Instalación composer
 > https://laravel.com/docs/8.x#installing-laravel ==> Instalar composer: https://getcomposer.org/download/
 >  ```
 >  php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
