@@ -136,3 +136,6 @@ git remote add origin https://github.com/NOMBRE_USUARIO/NOMBRE_PROYECTO.git
 git push -u origin master
 
 ```
+
+# Instalación Laravel macOS (Laravel 8.x | 2020)
+Descargamos Docker desde https://www.docker.com/ get-started
