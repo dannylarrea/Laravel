@@ -256,3 +256,36 @@ docker push dannylarrea/blog:redis
 docker tag mailhog/mailhog dannylarrea/blog:mailhog
 docker push dannylarrea/blog:mailhog
 ```
+
+# Uso Laravel Sail en Windows(2021)
+### Activar características de Windows
+**Panel de control > Programas > Programas y características**
+- [x] Plataforma de máquina virtual
+- [x] Subsistema de Windows para Linux
+
+### Desplegar WSL2
+1. Habilitar WSL en nuestro sistema.
+
+La forma más sencilla es abrir una terminal de PowerShell como administrador y ejecutar:
+
+```dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart```
+
+No cerramos la terminal ni reiniciaremos aún.
+
+2. Habilitar la virtualización.
+
+Ejecutamos el siguiente comando en la terminal de PowerShell abierta como Admin.
+
+```dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart```
+
+Ahora sí reiniciamos la máquina.
+
+3. Activamos WSL en su versión 2 como predeterminada.
+
+Abrimos otra vez una terminal de PowerShell como administrador y ejecutamos:
+
+```wsl --set-default-version 2```
+
+Veremos un mensaje similar a: "WSL 2 requires an update to its kernel component. For information, please visit https://aka.ms/wsl2kernel". Vamos a la URL y descargamos el paquete siguiendo los pasos del asistente, el típico siguiente – siguiente.
+
+
