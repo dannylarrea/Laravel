@@ -304,6 +304,7 @@ Veremos un mensaje similar a: "WSL 2 requires an update to its kernel component.
 
 ### Ejecución de ordenes de Sail
 
+![Image](https://github.com/dannylarrea/Laravel/blob/main/img-CLI.png)
 
 #### Referencias:
 - https://docs.microsoft.com/es-es/windows/wsl/install-win10
