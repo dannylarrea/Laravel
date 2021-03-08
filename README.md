@@ -257,7 +257,7 @@ docker tag mailhog/mailhog dannylarrea/blog:mailhog
 docker push dannylarrea/blog:mailhog
 ```
 
-# Uso Laravel Sail en Windows(2021)
+# Usar Laravel Sail en Windows(2021)
 ### Activar características de Windows
 **Panel de control > Programas > Programas y características**
 - [x] Plataforma de máquina virtual
@@ -302,5 +302,10 @@ Veremos un mensaje similar a: "WSL 2 requires an update to its kernel component.
 
 ![Image](https://enriquecatala.com/img/posts/createblog/2.png)
 
+### Ejecución de ordenes de Sail
 
 
+#### Referencias:
+- https://docs.microsoft.com/es-es/windows/wsl/install-win10
+- https://pandorafms.com/blog/es/wsl2/
+- https://enriquecatala.com/2020/05/28/Creating-my-new-blog-with-Jekyll.html
