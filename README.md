@@ -288,4 +288,19 @@ Abrimos otra vez una terminal de PowerShell como administrador y ejecutamos:
 
 Veremos un mensaje similar a: "WSL 2 requires an update to its kernel component. For information, please visit https://aka.ms/wsl2kernel". Vamos a la URL y descargamos el paquete siguiendo los pasos del asistente, el típico siguiente – siguiente.
 
+![Image](https://pandorafms.com/blog/wp-content/uploads/2020/11/msedge_ohfI5OFpGm.png)
+
+4. Descargamos **Ubuntu 20.04 LTS**.
+
+![Image](https://pandorafms.com/blog/wp-content/uploads/2020/11/ApplicationFrameHost_uaQHv3GwZH.png)
+
+5. Definición de WSL 2 como versión predeterminada. Ejecutamos el siguiente comando en la PowerSell:
+
+```wsl --set-default-version 2```
+
+### Configuración de WSL Integration desde el Dashboard de Docker
+
+![Image](https://enriquecatala.com/img/posts/createblog/2.png)
+
+
 
